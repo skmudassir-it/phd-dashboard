@@ -42,6 +42,7 @@ export const collegesData: CollegeEntry[] = [
   { sno: 24, name: "South Dakota State U", location: "Brookings, SD", focusAreas: "Mfg, Materials", admissionUrl: "https://www.sdstate.edu/programs/graduate/mechanical-engineering-phd", duration: "3 yrs", cost: "₹18.7L/yr" },
   { sno: 25, name: "USC-Aiken", location: "Aiken, SC", focusAreas: "Mfg, Fluids", admissionUrl: "https://sc.edu/study/majors_and_degrees/mechanical-engineering-phd.php", duration: "5 yrs", cost: "₹14.18L/yr" },
   { sno: 26, name: "U South Florida Tampa", location: "Tampa, FL", focusAreas: "Fluids, Mfg", admissionUrl: "https://www.usf.edu/engineering/mae/graduate/grad-admissions.aspx", duration: "4 yrs", cost: "₹19.04L/yr" },
+  { sno: 27, name: "NYU Tandon", location: "Brooklyn, NY", focusAreas: "Fluids, Mfg, Materials", admissionUrl: "https://engineering.nyu.edu/academics/programs/mechanical-engineering-phd", duration: "5 yrs", cost: "₹66.76L/yr" },
 ];
 
 // ─── Calendar Events ───
