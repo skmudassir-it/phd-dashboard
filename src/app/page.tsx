@@ -3,7 +3,7 @@
 import { outreachData, calendarData, notificationsData } from "@/lib/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Send, CheckCircle2, Calendar, Bell, TrendingUp } from "lucide-react";
+import { Send, CheckCircle2, Calendar, Bell, TrendingUp, Zap, Activity } from "lucide-react";
 
 export default function DashboardPage() {
   const totalSent = outreachData.length;
@@ -13,6 +13,11 @@ export default function DashboardPage() {
     (c) => new Date(c.date) >= new Date()
   ).length;
   const unreadNotifs = notificationsData.filter((n) => !n.read).length;
+
+  // Pipeline progress (total target: 203 professors)
+  const pipelineTotal = 203;
+  const pipelineProgress = Math.round((totalSent / pipelineTotal) * 100);
+  const pipelineRunning = true; // Live pipeline is active
 
   const stats = [
     { label: "Emails Sent", value: totalSent, icon: Send, color: "text-blue-600", bg: "bg-blue-50" },
@@ -58,6 +63,47 @@ export default function DashboardPage() {
           </Card>
         ))}
       </div>
+
+      {/* Pipeline Status */}
+      <Card className="border-0 shadow-sm">
+        <CardContent className="p-5">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <Activity className="h-4 w-4 text-green-500" />
+              <span className="text-sm font-medium text-gray-900">Outreach Pipeline</span>
+              <Badge className="bg-green-100 text-green-700 text-xs">Live</Badge>
+            </div>
+            <span className="text-sm text-gray-500">
+              {totalSent} / {pipelineTotal} professors
+            </span>
+          </div>
+          {/* Progress bar */}
+          <div className="w-full bg-gray-100 rounded-full h-2.5 mb-2">
+            <div
+              className="bg-blue-600 h-2.5 rounded-full transition-all duration-500"
+              style={{ width: `${pipelineProgress}%` }}
+            />
+          </div>
+          <div className="flex justify-between text-xs text-gray-400">
+            <span>{pipelineProgress}% complete</span>
+            <span>~{pipelineTotal - totalSent} remaining</span>
+          </div>
+          <div className="mt-3 grid grid-cols-3 gap-3 text-xs text-gray-500">
+            <div className="bg-gray-50 rounded-lg p-2 text-center">
+              <span className="block text-lg font-bold text-blue-600">45</span> MIT
+            </div>
+            <div className="bg-gray-50 rounded-lg p-2 text-center">
+              <span className="block text-lg font-bold text-red-600">37</span> CMU
+            </div>
+            <div className="bg-gray-50 rounded-lg p-2 text-center">
+              <span className="block text-lg font-bold text-gray-400">121</span> Remaining
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 mt-2">
+            Random 5–45 min intervals • Human-like pacing • ~5 days to completion
+          </p>
+        </CardContent>
+      </Card>
 
       <div className="grid md:grid-cols-2 gap-6">
         {/* Recent Responses */}
