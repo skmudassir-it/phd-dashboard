@@ -84,7 +84,14 @@ export const outreachData: OutreachEntry[] = [
   { sno: 80, name: "Victoria Webster-Wood", email: "vwebster@andrew.cmu.edu", university: "Carnegie Mellon", researchFocus: "Bioinspired robotics; bioengineering; sustainability", dateSent: "2026-06-21", status: "sent" },
   { sno: 81, name: "Kate Whitefoot", email: "kwhitefoot@cmu.edu", university: "Carnegie Mellon", researchFocus: "Energy; advanced vehicle systems; additive manufacturing", dateSent: "2026-06-21", status: "sent" },
   { sno: 82, name: "Jessica Zhang", email: "jessicaz@andrew.cmu.edu", university: "Carnegie Mellon", researchFocus: "Medical devices; human health; bioengineering", dateSent: "2026-06-21", status: "sent" },
-  { sno: 83, name: "Nenad Miljkovic", email: "nmiljkov@illinois.edu", university: "UIUC", researchFocus: "Phase change heat transfer; thermal energy storage", dateSent: "2026-06-21", status: "responded", responseDate: "2026-06-21", responseSummary: "Replied — applied for Spring 2027, will follow up once confirmed" }
+  { sno: 83, name: "Nenad Miljkovic", email: "nmiljkov@illinois.edu", university: "UIUC", researchFocus: "Phase change heat transfer; thermal energy storage", dateSent: "2026-06-21", status: "responded", responseDate: "2026-06-21", responseSummary: "Replied — applied for Spring 2027, will follow up once confirmed" },
+  { sno: 84, name: "Craig Bradshaw", email: "crbrad@illinois.edu", university: "UIUC", researchFocus: "Thermal systems; heat transfer; thermodynamics; HVAC; compressors", dateSent: "2026-06-21", status: "sent" },
+  { sno: 85, name: "C. Ricardo Constante-Amores", email: "crconsta@illinois.edu", university: "UIUC", researchFocus: "CFD; multiphase flow; data-driven turbulence modeling", dateSent: "2026-06-21", status: "sent" },
+  { sno: 86, name: "Paul Fischer", email: "fischerp@illinois.edu", university: "UIUC", researchFocus: "High-order CFD algorithms; computational heat transfer", dateSent: "2026-06-21", status: "sent" },
+  { sno: 87, name: "Nazanin Farjam", email: "nfarjam@illinois.edu", university: "UIUC", researchFocus: "Advanced manufacturing; process modeling & control; intelligent control", dateSent: "2026-06-21", status: "sent" },
+  { sno: 88, name: "Jorge Correa Panesso", email: "jcorre20@illinois.edu", university: "UIUC", researchFocus: "Manufacturing automation; CNC; digital manufacturing; AI", dateSent: "2026-06-21", status: "sent" },
+  { sno: 89, name: "Placid Ferreira", email: "pferreir@illinois.edu", university: "UIUC", researchFocus: "Nanomanufacturing; manufacturing automation; FEA in die casting", dateSent: "2026-06-21", status: "sent" },
+  { sno: 90, name: "Mickey Clemon", email: "lmclemon@illinois.edu", university: "UIUC", researchFocus: "Additive manufacturing; mechanical design; sustainable manufacturing", dateSent: "2026-06-21", status: "sent" }
 ];
 
 // ─── Colleges Data (merged from user research — 26 universities) ───
