@@ -83,7 +83,8 @@ export const outreachData: OutreachEntry[] = [
   { sno: 79, name: "Douglas Weber", email: "dougweber@cmu.edu", university: "Carnegie Mellon", researchFocus: "Neuromodulation; neural engineering; bioengineering", dateSent: "2026-06-21", status: "sent" },
   { sno: 80, name: "Victoria Webster-Wood", email: "vwebster@andrew.cmu.edu", university: "Carnegie Mellon", researchFocus: "Bioinspired robotics; bioengineering; sustainability", dateSent: "2026-06-21", status: "sent" },
   { sno: 81, name: "Kate Whitefoot", email: "kwhitefoot@cmu.edu", university: "Carnegie Mellon", researchFocus: "Energy; advanced vehicle systems; additive manufacturing", dateSent: "2026-06-21", status: "sent" },
-  { sno: 82, name: "Jessica Zhang", email: "jessicaz@andrew.cmu.edu", university: "Carnegie Mellon", researchFocus: "Medical devices; human health; bioengineering", dateSent: "2026-06-21", status: "sent" }
+  { sno: 82, name: "Jessica Zhang", email: "jessicaz@andrew.cmu.edu", university: "Carnegie Mellon", researchFocus: "Medical devices; human health; bioengineering", dateSent: "2026-06-21", status: "sent" },
+  { sno: 83, name: "Nenad Miljkovic", email: "nmiljkov@illinois.edu", university: "UIUC", researchFocus: "Phase change heat transfer; thermal energy storage", dateSent: "2026-06-21", status: "responded", responseDate: "2026-06-21", responseSummary: "Replied — applied for Spring 2027, will follow up once confirmed" }
 ];
 
 // ─── Colleges Data (merged from user research — 26 universities) ───
